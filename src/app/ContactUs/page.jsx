@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 
- function Footer() {
+function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -18,7 +18,7 @@ import { MdEmail } from "react-icons/md";
         <div className="grid md:grid-cols-4 gap-8">
           <div className="col-span-full flex justify-between items-center">
             <div className="flex items-center gap-4">
-              <h1 className="text-2xl font-bold text-white">✅ Taskie</h1>
+              <h1 className="text-2xl font-bold text-white">✅ Nudgr</h1>
             </div>
 
             <div className="flex space-x-4">
@@ -33,7 +33,7 @@ import { MdEmail } from "react-icons/md";
                 <FaLinkedin className="w-6 h-6" />
               </motion.a>
               <motion.a
-                href="https://github.com/aditya7483thakur/Ai-finance-platform"
+                href="https://github.com/Kbageja/Nudgr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-gray-400 transition-colors"
@@ -43,14 +43,13 @@ import { MdEmail } from "react-icons/md";
                 <FaGithub className="w-6 h-6" />
               </motion.a>
               <motion.a
-  href="mailto:kinshukbageja@gmail.com"
-  className="text-white hover:text-gray-400 transition-colors"
-  whileHover={{ scale: 1.2 }}
-  whileTap={{ scale: 0.95 }}
->
-  <MdEmail className="w-6 h-6" />
-</motion.a>
-             
+                href="mailto:kinshukbageja@gmail.com"
+                className="text-white hover:text-gray-400 transition-colors"
+                whileHover={{ scale: 1.2 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <MdEmail className="w-6 h-6" />
+              </motion.a>
             </div>
           </div>
         </div>
@@ -62,7 +61,7 @@ import { MdEmail } from "react-icons/md";
             transition={{ delay: 0.3, duration: 0.5 }}
             className="text-sm"
           >
-            &copy; {currentYear} Taskie. All rights reserved.
+            &copy; {currentYear} Nudgr. All rights reserved.
           </motion.p>
           <motion.p
             initial={{ x: 50, opacity: 0 }}
@@ -78,4 +77,4 @@ import { MdEmail } from "react-icons/md";
   );
 }
 
-export default Footer
+export default Footer;

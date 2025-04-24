@@ -112,15 +112,15 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="aboutus" ref={sectionRefs.aboutus} className="min-h-screen py-16">
+      <section id="aboutus" ref={sectionRefs.aboutus} className="min-h-screen ">
         <About />
       </section>
 
-      <section id="services" ref={sectionRefs.services} className="min-h-screen py-16">
+      <section id="services" ref={sectionRefs.services} className="min-h-screen ">
         <Services />
       </section>
 
-      <section id="tutorial" ref={sectionRefs.tutorial} className="min-h-screen py-16">
+      <section id="tutorial" ref={sectionRefs.tutorial} className="min-h-screen ">
         <Tutorial />
       </section>
 

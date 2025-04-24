@@ -50,7 +50,7 @@ function About() {
 
   return (
     <motion.div 
-      className="mx-auto my-20 py-8 px-4"
+      className="mx-auto  py-8 px-4"
       ref={ref}
       initial="hidden"
       animate={controls}
@@ -72,7 +72,7 @@ function About() {
       </motion.div>
 
       {/* Flex container for main content and tasks */}
-      <div className="flex flex-col mx-16 my-20 md:flex-row gap-8">
+      <div className="flex flex-col mx-16 mt-20  md:flex-row gap-8">
         {/* Left side: Main content */}
         <motion.div 
           className="flex-1"

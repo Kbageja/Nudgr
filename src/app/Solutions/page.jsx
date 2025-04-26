@@ -16,12 +16,13 @@ function Services() {
   }, [isInView, controls]);
 
   const services = [
-    { id: 1, title: "Small Businesses", description: "Task management solutions for growing teams" },
-    { id: 2, title: "Startups", description: "Agile workflow tools for innovative companies" },
-    { id: 3, title: "Enterprises", description: "Comprehensive performance tracking for large organizations" },
-    { id: 4, title: "Remote Teams", description: "Collaboration tools for distributed workforces" },
-    { id: 5, title: "Agencies", description: "Client and project management solutions" },
+    { id: 1, title: "Team Task Assignment", description: "Effortlessly assign tasks to your team members, set priorities, and define deadlines to streamline project execution." },
+    { id: 2, title: "Performance Tracking", description: "Analyze individual and team performance based on completed tasks to ensure accountability and recognize top performers." },
+    { id: 3, title: "Timely Submission Monitoring", description: "Track task deadlines and get real-time updates to ensure every project milestone is completed on time." },
+    { id: 4, title: "Remote Workforce Management", description: "Manage distributed teams effectively with task delegation, progress tracking, and centralized reporting — all in one platform." },
+    { id: 5, title: "Client and Project Coordination", description: "Organize client-related tasks, assign internal responsibilities, and monitor delivery timelines to maintain strong client relationships." },
   ];
+  
   
   // Auto-rotate carousel every 5 seconds
   useEffect(() => {
@@ -108,7 +109,7 @@ function Services() {
       initial="hidden"
       animate={controls}
       variants={containerVariants}
-      className="mx-auto my-10 py-6 px-4 text-black"
+      className="mx-auto my-10 py-6 px-4 text-white" // Changed text color to white for starry background
     >
       {/* Header with line */}
       <motion.div 
@@ -117,8 +118,9 @@ function Services() {
       >
         <div className="absolute w-full border-t border-gray-300"></div>
         <motion.div 
-          className="relative bg-white rounded-2xl px-4 text-center shadow-sm shadow-gray-300"
+          className="relative bg-white text-black rounded-2xl px-4 text-center shadow-md" // Background for the label
           whileHover={{ scale: 1.05 }}
+          style={{ backdropFilter: 'blur(10px)' }}
         >
           <span className="text-gray-800 font-medium text-sm">Solutions</span>
         </motion.div>
@@ -126,7 +128,7 @@ function Services() {
       
       {/* Solution title */}
       <motion.h2 
-        className="text-4xl text-center mb-12 mt-24"
+        className="text-4xl text-center mb-12 mt-24 text-black" // Ensuring white text
         variants={itemVariants}
       >
         Solutions Offered
@@ -150,16 +152,20 @@ function Services() {
               >
                 <div
                   className={`rounded-[46px] px-2 flex items-center justify-center shadow-md h-[234px] mx-auto ${
-                    index === 1 ? 'bg-[#E9EBFD]' : 'bg-gray-100'
+                    index === 1 ? 'bg-[#E9EBFD] text-black' : 'bg-zinc-300 bg-opacity-60 text-black'
                   }`}
                   style={{
                     width: '100%',
-                    maxWidth: '390px'
+                    maxWidth: '390px',
+                    backdropFilter: 'blur(4px)',
+                    border: index === 1 ? '1px solid rgba(255, 255, 255, 0.2)' : 'none'
                   }}
                 >
                   <div className="text-center p-4">
                     <h3 className="font-medium text-lg">{service.title}</h3>
-                    <p className="text-sm text-gray-600">{service.description}</p>
+                    <p className={`text-sm ${index === 1 ? 'text-gray-600' : 'text-gray-700'}`}>
+                      {service.description}
+                    </p>
                   </div>
                 </div>
               </motion.div>
@@ -177,7 +183,7 @@ function Services() {
           <motion.button
             key={index}
             className={`w-3 h-3 rounded-full ${
-              activeIndex === index ? 'bg-blue-500' : 'bg-gray-300'
+              activeIndex === index ? 'bg-blue-500' : 'bg-gray-400'
             }`}
             onClick={() => handleDotClick(index)}
             aria-label={`Go to slide ${index + 1}`}

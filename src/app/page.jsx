@@ -9,6 +9,7 @@ import About from './About/page';
 import Services from './Solutions/page';
 import Tutorial from './Tutorial/page';
 import Footer from './ContactUs/page';
+import StarryBackground from '@/components/custom/Starry';
 
 export default function Home() {
   const pathname = usePathname();
@@ -101,32 +102,38 @@ export default function Home() {
   }, [isScrolling]);
 
   return (
-    <div className="min-h-screen bg-white scroll-smooth">
-      <Navbar sectionRefs={sectionRefs} />
+    <div className="min-h-screen bg-transparent text-gray-800 scroll-smooth relative">
+      {/* Starry background */}
+      <StarryBackground />
       
-      <section id="hero" ref={heroRef} className="min-h-screen">
-        <div className="container mx-auto px-4 md:px-8">
-          <div className="my-8 mx-6 md:mx-12">
-            <HeroSection />
+      {/* Content wrapper with z-index to appear above the background */}
+      <div className="relative z-10">
+        <Navbar sectionRefs={sectionRefs} />
+        
+        <section id="hero" ref={heroRef} className="min-h-screen">
+          <div className="container mx-auto px-4 md:px-8">
+            <div className="my-8 mx-6 md:mx-12">
+              <HeroSection />
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="aboutus" ref={sectionRefs.aboutus} className="min-h-screen ">
-        <About />
-      </section>
+        <section id="aboutus" ref={sectionRefs.aboutus} className="min-h-screen">
+          <About />
+        </section>
 
-      <section id="services" ref={sectionRefs.services} className="min-h-screen ">
-        <Services />
-      </section>
+        <section id="services" ref={sectionRefs.services} className="min-h-screen">
+          <Services />
+        </section>
 
-      <section id="tutorial" ref={sectionRefs.tutorial} className="min-h-screen ">
-        <Tutorial />
-      </section>
+        <section id="tutorial" ref={sectionRefs.tutorial} className="min-h-screen">
+          <Tutorial />
+        </section>
 
-      <section id="contactus" ref={sectionRefs.contactus} className="">
-        <Footer />
-      </section>
+        <section id="contactus" ref={sectionRefs.contactus}>
+          <Footer />
+        </section>
+      </div>
     </div>
   );
 }

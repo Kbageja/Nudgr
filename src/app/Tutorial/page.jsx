@@ -12,16 +12,16 @@ function Tutorial() {
       </div>
       
       {/* Video container */}
-      <div className="mx-auto rounded-[73px] overflow-hidden bg-gray-200 h-[650px] max-w-7xl my-36">
-        {/* Video element using file from public folder */}
-        <video 
+      <div className="mx-auto rounded-4xl overflow-hidden bg-gray-200 h-[650px] max-w-7xl my-36">
+        {/* Embed YouTube Video */}
+        <iframe
           className="w-full h-full object-cover"
-          controls
-          poster="/DemoThumb.png" // Optional: placeholder image until video loads
-        >
-          <source src="Demo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+          src="https://www.youtube.com/embed/f5EidWD1llA"
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </div>
   )

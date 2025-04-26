@@ -128,7 +128,7 @@ function Services() {
       
       {/* Solution title */}
       <motion.h2 
-        className="text-4xl text-center mb-12 mt-24 text-black" // Ensuring white text
+        className="text-4xl text-center mb-12 mt-24 font-akatab font-bold text-black" // Ensuring white text
         variants={itemVariants}
       >
         Solutions Offered
@@ -152,7 +152,7 @@ function Services() {
               >
                 <div
                   className={`rounded-[46px] px-2 flex items-center justify-center shadow-md h-[234px] mx-auto ${
-                    index === 1 ? 'bg-[#E9EBFD] text-black' : 'bg-zinc-300 bg-opacity-60 text-black'
+                    index === 1 ? 'bg-[#E9EBFD] text-black' : 'bg-zinc-100 bg-opacity-60 text-black'
                   }`}
                   style={{
                     width: '100%',
@@ -162,8 +162,8 @@ function Services() {
                   }}
                 >
                   <div className="text-center p-4">
-                    <h3 className="font-medium text-lg">{service.title}</h3>
-                    <p className={`text-sm ${index === 1 ? 'text-gray-600' : 'text-gray-700'}`}>
+                    <h3 className="font-medium text-xl pb-10">{service.title}</h3>
+                    <p className={`text-sm font-light ${index === 1 ? 'text-gray-600' : 'text-gray-700'}`}>
                       {service.description}
                     </p>
                   </div>

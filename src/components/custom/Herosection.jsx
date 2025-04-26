@@ -86,21 +86,21 @@ export default function HeroSection() {
         variants={containerVariants}
       >
         <motion.h1 
-          className="text-black text-4xl md:text-5xl font-bold mb-3"
+          className="text-black text-4xl md:text-5xl font-bold font-akatab mb-3"
           variants={itemVariants}
         >
           Your Smart Solution for Task
         </motion.h1>
         
         <motion.h1 
-          className="text-black text-4xl md:text-5xl font-bold mb-3"
+          className="text-black text-4xl md:text-5xl font-akatab font-bold mb-3"
           variants={itemVariants}
         >
           &
         </motion.h1>
         
         <motion.h1 
-          className="text-black text-4xl md:text-5xl font-bold mb-12"
+          className="text-black text-4xl md:text-5xl font-akatab font-bold mb-12"
           variants={itemVariants}
         >
           Performance Management.

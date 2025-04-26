@@ -119,7 +119,7 @@ export default function Navbar({ sectionRefs }) {
           Contact Us
         </button>
         <Link
-          href="https://task-management-lcdm-qn5peodnc-kinshuks-projects-25193fa4.vercel.app"
+          href="https://task-management-lcdm.vercel.app"
           target="_blank"
           rel="noopener noreferrer"
         >

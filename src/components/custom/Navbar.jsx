@@ -229,7 +229,7 @@ export default function Navbar({ sectionRefs }) {
               {/* Mobile Menu Footer with Try Now Button */}
               <div className="mt-auto p-4 border-t">
                 <Link
-                  href="https://task-management-lcdm-qn5peodnc-kinshuks-projects-25193fa4.vercel.app"
+                  href="https://task-management-lcdm.vercel.app"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="block"

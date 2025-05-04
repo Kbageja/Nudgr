@@ -19,6 +19,10 @@ function Tutorial() {
           property="og:description" 
           content="Watch our tutorial video to learn how to maximize productivity with Nudgr's task management and performance tracking features." 
         />
+         <meta itemProp="name" content="Nudgr Task Management System Tutorial" />
+  <meta itemProp="description" content="Complete guide to using Nudgr's productivity and task management platform" />
+  <meta itemProp="thumbnailUrl" content="https://img.youtube.com/vi/WPqGylce3r8/maxresdefault.jpg" />
+  <meta itemProp="uploadDate" content="2023-01-01T08:00:00+08:00" />
         <meta property="og:type" content="video.other" />
         <meta property="og:url" content="https://yourwebsite.com/tutorial" />
         <meta property="og:image" content="https://img.youtube.com/vi/WPqGylce3r8/maxresdefault.jpg" />

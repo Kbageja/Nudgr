@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nudgr.vercel.app
+
+# Sitemaps
+Sitemap: https://nudgr.vercel.app/sitemap.xml

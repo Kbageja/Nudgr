@@ -24,16 +24,16 @@ export const metadata = {
   openGraph: {
     title: "Nudgr - Smart Task Management",
     description: "Assign, track, and ensure timely task completion with Nudgr.",
-    url: "https://nudgr.vercel.app/",
+    url: "https://nudgr.vercel.app",
     siteName: "Nudgr",
     images: [
       {
-        url: "https://yourwebsite.com/og-image.png", // Replace this URL
+        url: "https://nudgr.vercel.app/og-image.png", // assuming it's in /public
         width: 1200,
         height: 630,
         alt: "Nudgr - Smart Task Management",
       },
-    ],
+    ],    
     locale: "en_US",
     type: "website",
   },
@@ -41,7 +41,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Nudgr - Smart Task Management",
     description: "Assign, track, and analyze tasks efficiently with Nudgr.",
-    images: ["https://yourwebsite.com/og-image.png"], // Replace this URL
+    images: ["https://nudgr.vercel.app/og-image.png"], // Replace this URL
   },
 };
 

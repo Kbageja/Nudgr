@@ -21,8 +21,8 @@ function Tutorial() {
         />
         <meta property="og:type" content="video.other" />
         <meta property="og:url" content="https://yourwebsite.com/tutorial" />
-        <meta property="og:image" content="https://img.youtube.com/vi/WPqGylce3r8/maxresdefault.jpg" />
-        <meta property="og:video" content="https://www.youtube.com/embed/WPqGylce3r8" />
+        <meta property="og:image" content="https://img.youtube.com/vi/PKzXX07A22Q/maxresdefault.jpg" />
+        <meta property="og:video" content="https://www.youtube.com/embed/PKzXX07A22Q" />
         <meta property="og:video:type" content="text/html" />
         <meta property="og:video:width" content="1280" />
         <meta property="og:video:height" content="720" />
@@ -32,8 +32,8 @@ function Tutorial() {
           name="twitter:description" 
           content="Learn how to use all features of Nudgr's productivity platform with our comprehensive tutorial." 
         />
-        <meta name="twitter:image" content="https://img.youtube.com/vi/WPqGylce3r8/maxresdefault.jpg" />
-        <meta name="twitter:player" content="https://www.youtube.com/embed/WPqGylce3r8" />
+        <meta name="twitter:image" content="https://img.youtube.com/vi/PKzXX07A22Q/maxresdefault.jpg" />
+        <meta name="twitter:player" content="https://www.youtube.com/embed/PKzXX07A22Q" />
         <meta name="twitter:player:width" content="1280" />
         <meta name="twitter:player:height" content="720" />
         <link rel="canonical" href="https://yourwebsite.com/tutorial" />
@@ -43,11 +43,11 @@ function Tutorial() {
             "@type": "VideoObject",
             "name": "Nudgr Task Management System Tutorial",
             "description": "Complete guide to using Nudgr's productivity and task management platform",
-            "thumbnailUrl": "https://img.youtube.com/vi/WPqGylce3r8/maxresdefault.jpg",
+            "thumbnailUrl": "https://img.youtube.com/vi/PKzXX07A22Q/maxresdefault.jpg",
             "uploadDate": "2023-01-01T08:00:00+08:00",
             "duration": "PT5M33S",
-            "contentUrl": "https://www.youtube.com/embed/WPqGylce3r8",
-            "embedUrl": "https://www.youtube.com/embed/WPqGylce3r8",
+            "contentUrl": "https://www.youtube.com/embed/PKzXX07A22Q",
+            "embedUrl": "https://www.youtube.com/embed/PKzXX07A22Q",
             "interactionCount": "12345"
           })}
         </script>
@@ -71,15 +71,15 @@ function Tutorial() {
           {/* Add the missing properties here */}
           <meta itemProp="name" content="Nudgr Task Management System Tutorial" />
           <meta itemProp="description" content="Complete guide to using Nudgr's productivity and task management platform" />
-          <meta itemProp="thumbnailUrl" content="https://img.youtube.com/vi/WPqGylce3r8/maxresdefault.jpg" />
+          <meta itemProp="thumbnailUrl" content="https://img.youtube.com/vi/PKzXX07A22Q/maxresdefault.jpg" />
           <meta itemProp="uploadDate" content="2023-01-01T08:00:00+08:00" />
           <meta itemProp="duration" content="PT5M33S" />
-          <meta itemProp="contentUrl" content="https://www.youtube.com/embed/WPqGylce3r8" />
+          <meta itemProp="contentUrl" content="https://www.youtube.com/embed/PKzXX07A22Q" />
           
           {/* Embed YouTube Video */}
           <iframe
             className="w-full h-full object-cover"
-            src="https://www.youtube.com/embed/WPqGylce3r8"
+            src="https://www.youtube.com/embed/PKzXX07A22Q"
             title="Nudgr Task Management System - Complete Tutorial"
             allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
